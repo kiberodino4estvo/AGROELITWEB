@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Агроэлита | Семена</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-overlay">
+    <header class="site-header">
+      <h1 class="site-title">Агроэлита</h1>
+      <nav class="main-nav">
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li class="dropdown">
+            <a href="#">О компании</a>
+            <ul class="dropdown-menu">
+              <a href="history.html">История</a>
+              <a href="team.html">Команда</a>
+              <a href="vacancies.html">Вакансии</a>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Продукция</a>
+            <ul class="dropdown-menu">
+              <a href="grains.html">Зерновые</a>
+              <a href="seeds.html">Семена</a>
+            </ul>
+          </li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <main>
+    <h1 class="page-title">Семена</h1>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="zerno">Зерновые злаковые</button>
+      <button class="filter-btn" data-filter="bobo">Зерновые бобовые</button>
+      <button class="filter-btn" data-filter="kormzlak">Кормовые злаковые травы</button>
+      <button class="filter-btn" data-filter="kormbobo">Кормовые бобовые травы</button>
+      <button class="filter-btn" data-filter="maslk">Маслиничные культуры</button>
+    </div>
+
+    <section class="grain-catalog">
+      <article class="grain-card" data-category="zerno" data-visible="true">
+        <img src="images/wheat.jpg" alt="Пшеница" />
+        <h3>Пшеница</h3>
+        <p>Высококачественный сорт пшеницы с хорошей урожайностью и устойчивостью к болезням.</p>
+      </article>
+
+      <article class="grain-card" data-category="zerno" data-visible="true">
+        <img src="images/barley.jpg" alt="Рожь" />
+        <h3>Рожь</h3>
+        <p>Морозостойкая культура для северных регионов, улучшает структуру почвы. Основное сырьё для ржаного хлеба.</p>
+      </article>
+      
+      <article class="grain-card" data-category="zerno" data-visible="true">
+        <img src="images/oats.jpg" alt="Ячмень" />
+        <h3>Ячмень</h3>
+        <p>Универсальная зерновая культура с коротким вегетационным периодом. Широко используется в пивоварении и животноводстве.</p>
+      </article>
+      
+      <article class="grain-card" data-category="maslk" data-visible="true">
+        <img src="images/oats.jpg" alt="Подсолнечник" />
+        <h3>Подсолнечник</h3>
+        <p>Основная масличная культура России. Семена содержат до 50% высококачественного пищевого масла.</p>
+      </article>
+      
+      <article class="grain-card" data-category="maslk" data-visible="true">
+        <img src="images/oats.jpg" alt="Рапс" />
+        <h3>Рапс</h3>
+        <p>Источник растительного масла и биодизеля. Важная сидеральная культура для восстановления почв.</p>
+      </article>
+      
+      <article class="grain-card" data-category="zerno" data-visible="true">
+        <img src="images/rye.jpg" alt="Сорго" />
+        <h3>Сорго</h3>
+        <p>Засухоустойчивая зерновая культура для южных регионов. Используется в пищевой промышленности и как кормовое растение.</p>
+      </article>
+      
+      <article class="grain-card" data-category="bobo" data-visible="true">
+        <img src="images/corn.jpg" alt="Соя" />
+        <h3>Соя</h3>
+        <p>Белоксодержащая бобовая культура. Сырьё для производства растительного масла, тофу и комбикормов.</p>
+      </article>
+      
+      <article class="grain-card" data-category="zerno" data-visible="true">
+        <img src="images/triticale.jpg" alt="Тритикале" />
+        <h3>Тритикале</h3>
+        <p>Гибрид пшеницы и ржи. Объединяет урожайность пшеницы с выносливостью ржи к неблагоприятным условиям.</p>
+      </article>
+      
+      <article class="grain-card" data-category="zerno" data-visible="true">
+        <img src="images/triticale.jpg" alt="Овес" />
+        <h3>Овес</h3>
+        <p>Ценная кормовая и пищевая культура. Содержит уникальный комплекс витаминов и минеральных веществ.</p>
+      </article>
+      
+      <article class="grain-card" data-category="bobo" data-visible="true">
+        <img src="images/triticale.jpg" alt="Чечивица" />
+        <h3>Чечивица</h3>
+        <p>Древняя бобовая культура с высоким содержанием белка. Устойчива к засухе и бедным почвам.</p>
+      </article>
+      
+      <article class="grain-card" data-category="bobo" data-visible="true">
+        <img src="images/triticale.jpg" alt="Горох" />
+        <h3>Горох</h3>
+        <p>Важная белковая культура в севообороте. Используется в пищевой промышленности и как сидерат.</p>
+      </article>
+      
+      <article class="grain-card" data-category="bobo" data-visible="true">
+        <img src="images/triticale.jpg" alt="Фасоль" />
+        <h3>Фасоль</h3>
+        <p>Бобовая культура с разнообразными сортами. Богатый источник растительного белка и микроэлементов.</p>
+      </article>
+      
+      <article class="grain-card" data-category="kormzlak" data-visible="true">
+        <img src="images/wheat.jpg" alt="Тимофеевка луговая" />
+        <h3>Тимофеевка луговая</h3>
+        <p>Многолетний злак для пастбищ и сенокосов. Сохраняет питательность даже в сушеном виде.</p>
+      </article>
+      
+      <article class="grain-card" data-category="kormzlak" data-visible="true">
+        <img src="images/wheat.jpg" alt="Овсяница луговая" />
+        <h3>Овсяница луговая</h3>
+        <p>Устойчивый к вытаптыванию злак. Формирует плотный травостой для долголетних пастбищ.</p>
+      </article>
+      
+      <article class="grain-card" data-category="kormzlak" data-visible="true">
+        <img src="images/wheat.jpg" alt="Ежа сборная" />
+        <h3>Ежа сборная</h3>
+        <p>Теневыносливая кормовая трава. Даёт высокие урожаи зелёной массы даже на бедных почвах.</p>
+      </article>
+      
+      <article class="grain-card" data-category="kormzlak" data-visible="true">
+        <img src="images/wheat.jpg" alt="Райграс высокий" />
+        <h3>Райграс высокий</h3>
+        <p>Быстрорастущий злак для интенсивного кормопроизводства. Отличается высокой переваримостью.</p>
+      </article>
+      
+      <article class="grain-card" data-category="kormzlak" data-visible="true">
+        <img src="images/wheat.jpg" alt="Мятлик луговой" />
+        <h3>Мятлик луговой</h3>
+        <p>Низкорослый злак для создания устойчивых пастбищ. Сохраняет зелёный цвет даже под снегом.</p>
+      </article>
+      
+      <article class="grain-card" data-category="kormzlak" data-visible="true">
+        <img src="images/wheat.jpg" alt="Лихохвост луговой" />
+        <h3>Лихохвост луговой</h3>
+        <p>Влаголюбивая кормовая трава для заливных лугов. Даёт раннюю зелёную массу весной.</p>
+      </article>
+      
+      <article class="grain-card" data-category="kormzlak" data-visible="true">
+        <img src="images/wheat.jpg" alt="Кострец безостый" />
+        <h3>Кострец безостый</h3>
+        <p>Засухоустойчивый верховой злак. Формирует мощную дернину для защиты почв от эрозии.</p>
+      </article>
+      
+      <article class="grain-card" data-category="kormbobo" data-visible="true">
+        <img src="images/wheat.jpg" alt="Клевер луговой" />
+        <h3>Клевер луговой</h3>
+        <p>Основная бобовая кормовая культура. Обогащает почву азотом и улучшает её структуру.</p>
+      </article>
+      
+      <article class="grain-card" data-category="kormbobo" data-visible="true">
+        <img src="images/wheat.jpg" alt="Люцерна посевная" />
+        <h3>Люцерна посевная</h3>
+        <p>Многолетняя бобовая культура с высокой питательностью. Даёт до 5 укосов за сезон.</p>
+      </article>
+      
+      <article class="grain-card" data-category="kormbobo" data-visible="true">
+        <img src="images/wheat.jpg" alt="Эспарцет песчаный" />
+        <h3>Эспарцет песчаный</h3>
+        <p>Засухоустойчивое кормовое растение для степных зон. Ценный медонос и сидерат.</p>
+      </article>
+      
+      <article class="grain-card" data-category="kormbobo" data-visible="true">
+        <img src="images/wheat.jpg" alt="Донник жёлтый и белый" />
+        <h3>Донник жёлтый и белый</h3>
+        <p>Двулетние медоносы и сидераты. Улучшают солонцеватые почвы и подавляют сорняки.</p>
+      </article>
+      
+      <article class="grain-card" data-category="kormbobo" data-visible="true">
+        <img src="images/wheat.jpg" alt="Чина луговая" />
+        <h3>Чина луговая</h3>
+        <p>Многолетняя бобовая культура для влажных лугов. Устойчива к вымоканию и болезням.</p>
+      </article>
+      
+      <article class="grain-card" data-category="kormbobo" data-visible="true">
+        <img src="images/wheat.jpg" alt="Вика, мышиный горошек" />
+        <h3>Вика, мышиный горошек</h3>
+        <p>Однолетние и многолетние кормовые бобовые. Быстро растут и обогащают почву азотом.</p>
+      </article>
+
+    </section>
+  </main>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const grainCards = document.querySelectorAll(".grain-card");
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Активная кнопка
+          filterButtons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const filter = btn.getAttribute("data-filter");
+
+          grainCards.forEach((card) => {
+            if (filter === "all" || card.getAttribute("data-category") === filter) {
+              // Показать с анимацией
+              if (card.classList.contains("hidden")) {
+                card.classList.remove("hidden");
+                card.style.position = "static";
+                card.setAttribute("data-visible", "true");
+                setTimeout(() => {
+                  card.style.display = "block";
+                }, 10);
+              }
+            } else {
+              // Скрыть с анимацией
+              if (!card.classList.contains("hidden")) {
+                card.classList.add("hidden");
+                setTimeout(() => {
+                  card.style.display = "none";
+                  card.setAttribute("data-visible", "false");
+                  card.style.position = "absolute";
+                }, 400); // совпадает с transition-duration
+              }
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

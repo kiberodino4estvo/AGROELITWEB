@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вакансии | Агроэлита</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="background-overlay">
+    <header class="site-header">
+      <h1 class="site-title">Агроэлита</h1>
+      <nav class="main-nav">
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li class="dropdown">
+            <a href="#">О компании</a>
+            <ul class="dropdown-menu">
+              <li><a href="history.html">История</a></li>
+              <li><a href="team.html">Команда</a></li>
+              <li><a href="vacancies.html">Вакансии</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Продукция</a>
+            <ul class="dropdown-menu">
+              <li><a href="grains.html">Зерновые</a></li>
+              <li><a href="seeds.html">Семена</a></li>
+            </ul>
+          </li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="content-section">
+        <h2 style="text-align: center;">Актуальные вакансии</h2>
+
+        <ul class="vacancy-list">
+          <li>Агроном</li>
+          <li>Оператор сельхозтехники</li>
+          <li>Менеджер по снабжению</li>
+          <li>Бухгалтер</li>
+          <li>Логист</li>
+        </ul>
+
+        <h3 style="margin-top: 40px;">Подать заявку на вакансию</h3>
+
+<form class="vacancy-form" id="vacancyForm" action="https://formspree.io/f/mzzgbdea" method="POST">
+  <label for="position">Выберите должность:</label>
+  <select id="position" name="Должность" required>
+    <option value="">— выберите —</option>
+    <option value="Агроном">Агроном</option>
+    <option value="Оператор сельхозтехники">Оператор сельхозтехники</option>
+    <option value="Менеджер по снабжению">Менеджер по снабжению</option>
+    <option value="Бухгалтер">Бухгалтер</option>
+    <option value="Логист">Логист</option>
+  </select>
+
+  <label for="fullname">ФИО:</label>
+  <input type="text" id="fullname" name="ФИО" required />
+
+  <label for="email">Электронная почта:</label>
+  <input type="email" id="email" name="Email" required />
+
+  <label for="phone">Телефон:</label>
+  <input type="tel" id="phone" name="Телефон" required />
+
+  <button type="submit">Отправить заявку</button>
+</form>
+<div id="formStatus" class="form-status hidden">Спасибо! Ваша заявка отправлена.</div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
