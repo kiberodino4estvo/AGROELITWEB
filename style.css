@@ -18,7 +18,7 @@
     color: white;
     padding: 20px;
   }
-  
+
   /* Заголовок сайта */
   .site-header {
     display: flex;
@@ -28,8 +28,11 @@
   }
   
   .site-title {
-    font-size: 2.5rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
     font-weight: bold;
+    font-style: normal;
+    font-size: 4rem;
   }
   
   /* Меню навигации */
@@ -83,12 +86,42 @@
   
   /* Галерея */
   .image-gallery {
-    margin-top: 50px;
     display: flex;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
+    padding: 40px 20px;
   }
+  
+  .image-item {
+    background-color: rgba(135, 234, 113, 0.55); /* Серый фон с 70% непрозрачности */
+    padding: 16px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .image-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  .caption {
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+    color: #000000;
+  }
+  
   
   .image-placeholder {
     width: 250px;
@@ -393,5 +426,79 @@
     line-height: 1.4;
   }
 
+  
+    .contact-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .contact-info {
+      flex: 1 1 400px;
+      background-color: #f1f8e9;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(139, 195, 74, 0.3);
+    }
+
+    .contact-info h2 {
+      margin-bottom: 20px;
+      color: #33691e;
+      font-size: 2rem;
+    }
+
+    .contact-info p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .map-container {
+      flex: 1 1 400px;
+      min-height: 320px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(76, 175, 80, 0.25);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .about-company {
+      background-color: rgba(135, 234, 113, 0.85);
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 1000px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-family: 'Oswald', sans-serif;
+    }
+    
+    .about-company h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #2e7d32; /* тёмно-зелёный акцент */
+    }
+    
+    .about-company p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    
   
   
