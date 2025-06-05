@@ -538,3 +538,113 @@
       }
     }
     
+    /*frfrf*/
+/* Бургер-кнопка */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+
+  .main-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    width: 100%;
+  }
+
+  .main-nav.active {
+    max-height: 500px; /* достаточно для всех пунктов */
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    background: rgba(110, 107, 107, 0.8);
+    margin-left: 10px;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+}
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+/* При активном меню — вращаем кнопку */
+.burger.rotated {
+  transform: rotate(90deg);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.burger span {
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+  transform-origin: center;
+}
+
+/* Состояние "активно" — превращение в X */
+.burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

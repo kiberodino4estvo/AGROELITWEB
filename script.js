@@ -36,4 +36,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById("burger");
+    const nav = document.getElementById("main-nav");
+  
+    burger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    burger.classList.toggle("active");
+  
+    const expanded = burger.getAttribute("aria-expanded") === "true";
+    burger.setAttribute("aria-expanded", String(!expanded));
+  });
+  
+  
+  
+  
+    const dropdowns = document.querySelectorAll(".dropdown");
+  
+    dropdowns.forEach(drop => {
+      drop.addEventListener("click", (e) => {
+        e.stopPropagation();
+        drop.classList.toggle("open");
+      });
+    });
+  
+    document.body.addEventListener("click", () => {
+      dropdowns.forEach(d => d.classList.remove("open"));
+    });
+  });
   
