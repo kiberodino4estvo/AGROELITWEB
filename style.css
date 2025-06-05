@@ -500,5 +500,41 @@
       color: #333;
     }
     
-  
-  
+  /*ffff*/
+    @media (max-width: 768px) {
+      .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .site-title {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+    
+      .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+    
+      .nav-menu a {
+        padding: 10px;
+        width: 100%;
+      }
+    
+      .dropdown-menu {
+        position: static;
+        background: rgba(110, 107, 107, 0.9);
+        margin-top: 5px;
+      }
+    
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+    
+      .main-nav {
+        width: 100%;
+      }
+    }
+    
