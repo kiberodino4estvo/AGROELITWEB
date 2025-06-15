@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Корзина | Агроэлита</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="background-overlay">
+  <header class="site-header">
+    <h1 class="site-title">Корзина</h1>
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="grains.html">Назад к зерновым</a></li>
+        <li><a href="seeds.html">Назад к семенам</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content-section">
+    <h2>Ваш заказ</h2>
+    <ul id="cart-list"></ul>
+    <button id="clear-cart" style="margin: 15px 0;">Очистить корзину</button>
+  
+    <h3>Контактные данные</h3>
+    <div class="form-wrapper">
+    <form id="order-form" class="vacancy-form">
+      <label for="name">ФИО:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" required pattern="^\+?[0-9\s\-]{7,15}$">
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="address">Адрес доставки:</label>
+      <input type="text" id="address" name="address" required>
+  
+      <button type="submit">Оформить заказ</button>
+    </form>
+</div>
+  
+    <p id="order-status" class="form-status"></p>
+  </main>
+
+   <script src="script/cart.js"></script> 
+</body>
+</html>

@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div class="background-overlay">
@@ -39,6 +40,7 @@
           </li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="cart.html" title="Корзина"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
       </nav>
     </header>
@@ -61,39 +63,45 @@
         <img src="images/pshenica.jfif" alt="Пшеница" />
         <h3>Пшеница мягкая</h3>
         <p>Высококачественный сорт пшеницы с хорошей урожайностью и устойчивостью к болезням.</p>
+        <button class="add-to-cart" data-name="Пшеница мягкая">Добавить в корзину</button>
       </article>
 
       <article class="grain-card" data-category="barley" data-visible="true">
         <img src="images/yachmen.jfif" alt="Ячмень" />
         <h3>Ячмень яровой</h3>
         <p>Раннеспелый сорт ячменя, адаптированный к климату Красноярского края.</p>
+        <button class="add-to-cart" data-name="Ячмень">Добавить в корзину</button>
       </article>
 
       <article class="grain-card" data-category="oats" data-visible="true">
         <img src="images/oves.jfif" alt="Овёс" />
         <h3>Овёс белый</h3>
         <p>Сорт овса с высоким содержанием белка, подходит для кормления скота.</p>
+        <button class="add-to-cart" data-name="Овёс">Добавить в корзину</button>
       </article>
 
       <article class="grain-card" data-category="rye" data-visible="true">
         <img src="images/rozh.jfif" alt="Рожь" />
         <h3>Рожь озимая</h3>
         <p>Устойчивый к заморозкам сорт ржи, повышает плодородие почвы.</p>
+        <button class="add-to-cart" data-name="Рожь">Добавить в корзину</button>
       </article>
 
       <article class="grain-card" data-category="corn" data-visible="true">
         <img src="images/kukur.jfif" alt="Кукуруза" />
         <h3>Кукуруза сахарная</h3>
         <p>Сладкий сорт кукурузы с высоким содержанием сахаров, подходит для пищевой промышленности.</p>
+        <button class="add-to-cart" data-name="Кукуруза">Добавить в корзину</button>
       </article>
 
       <article class="grain-card" data-category="triticale" data-visible="true">
         <img src="images/tritik.jfif" alt="Тритикале" />
         <h3>Тритикале гибрид</h3>
         <p>Гибрид пшеницы и ржи с высокой урожайностью и устойчивостью к засухе.</p>
+        <button class="add-to-cart" data-name="Тритикале">Добавить в корзину</button>
       </article>
     </section>
   </main>
-  <script src="script.js"></script>
+  <script src="script/script.js"></script>
 </body>
 </html>
